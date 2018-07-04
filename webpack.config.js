@@ -13,7 +13,7 @@ module.exports = {
     // publicPath: '/build',
     // 输出文件名字
     filename: "bundle.js"
-  },
+  },6
   module: {
     rules: [
       // 配置的是用来解析.css文件的loader(style-loader和css-loader)
