@@ -23,8 +23,9 @@ vue2 + vuex + vue-router + webpack + ES6/7 + fetch + sass + flex + svg
 
 
 ## 项目运行
+npm run dev
 
-#### 注意：由于涉及大量的 ES6/7 等新属性，node 需要 6.0 以上版本 
+#### 注意：由于涉及大量的 ES6/7 等新属性，node 需要 6.0 以上版本
 
 ```
 git clone https://github.com/bailicangdu/vue2-elm.git  
@@ -61,25 +62,6 @@ npm run dev
 >  推荐一个 react + redux 开源项目，对react感兴趣的朋友赶紧去看看。[地址在这里](https://github.com/bailicangdu/react-pxq)
 
 >  另外一个 vue2 + vuex 的入门项目，比当前的项目简单很多，非常适合入门练习。[地址在这里](https://github.com/bailicangdu/vue2-happyfri)
-
-
-## 关于 数据接口 的说明🤔
-
-### 2017-05-30
-
-由于一些原因，以前的数据接口无法使用，导致项目无法正常运行。以后改用nodejs构建的[后台系统](https://github.com/bailicangdu/node-elm)接口，数据接口的格式保持了和官网的一致。并提供对应的[后台管理系统](https://github.com/bailicangdu/vue2-manage)
-
-
-
-# 效果演示
-
-[查看demo请戳这里](http://cangdu.org:8001/)（请用chrome手机模式预览）
-
-### 移动端扫描下方二维码
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/ewm.png" width="250" height="250"/>
-
-
 
 # 目标功能
 - [x] 定位功能 -- 完成
@@ -125,63 +107,6 @@ npm run dev
 6、项目已经完成，共45个页面。
 
 
-# 最终目标
-
-1、用node.js构建一个模拟外卖平台的后台系统。[地址在这里](https://github.com/bailicangdu/node-elm)
-
-2、利用 react-native 写出跨 Android 和 IOS 的原生APP版本。[地址在这里](https://github.com/bailicangdu/React-Native-elm)
-
-3、如果时间来的及，会出一卖家版本。
-
-所以我的目的是构建一个横跨前后端，移动IOS、Android的完整生态圈。
-
-。。。敬请期待
-
-
-
-
-# 部分截图
-
-
-### 商铺列表页
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/msite.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/msite.gif" width="365" height="619"/>
-
-
-### 商铺筛选页
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/food.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/food.gif" width="365" height="619"/>
-
-
-
-### 餐馆食品列表与购物车
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/shop_cart.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/shop_cart.gif" width="365" height="619"/>
-
-### 确认订单页
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/confirm1.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/confirmOrder.gif" width="365" height="619"/>
-
-
-### 搜索页
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/search.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/search.gif" width="365" height="619"/>
-
-
-### 登录页
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/login1.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/login.gif" width="365" height="619"/>
-
-
-### 个人中心
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/profile.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/profile.gif" width="365" height="619"/>
-
-
-
-
-
-
 # 项目布局
 
 ```
@@ -223,7 +148,7 @@ npm run dev
 │   │   │       ├── exchange.vue                // 兑换红包
 │   │   │       ├── hbDescription.vue           // 红包说明
 │   │   │       └── hbHistory.vue               // 历史红包
-│   │   ├── city                 
+│   │   ├── city
 │   │   │   └── city.vue                        // 当前城市页
 │   │   ├── confirmOrder
 │   │   │   ├── children
@@ -234,7 +159,7 @@ npm run dev
 │   │   │   │   ├── chooseAddress.vue           // 选择地址页
 │   │   │   │   ├── invoice.vue                 // 选择发票页
 │   │   │   │   ├── payment.vue                 // 付款页
-│   │   │   │   ├── remark.vue                  // 订单备注页 
+│   │   │   │   ├── remark.vue                  // 订单备注页
 │   │   │   │   └── userValidation.vue          // 用户验证页
 │   │   │   └── confirmOrder.vue                // 确认订单页
 │   │   ├── download
